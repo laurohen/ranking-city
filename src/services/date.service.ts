@@ -5,21 +5,7 @@ import { extendMoment } from 'moment-range';
 // const moment = extendMoment(Moment);
 const moment = extendMoment(Moment as any);
 
-
-        export function arrayDates() {
-
-            console.log('Create range date')
-            const start = moment('2011-10-01', 'YYYY-MM-DD');
-            const end   = moment('2011-10-31', 'YYYY-MM-DD');
-            const range = moment.range(start, end);
-            
-            const arrayDate = [range];
-            console.log(arrayDate)
-            return range
-        
-        }
-
-        export function getDates(dateStart : any , dateEnd : any) {
+    export function getDates(dateStart : any , dateEnd : any) {
 
             var dateArr = []; 
             var prevDate : any;
@@ -43,4 +29,4 @@ const moment = extendMoment(Moment as any);
             console.log('Dates array: ');
             console.log(dateArr);
             return dateArr;
-        }
+    }
