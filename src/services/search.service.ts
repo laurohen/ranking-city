@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import {httpPost, interfaces, requestParam} from 'inversify-express-utils';
 import { ApiOperationPost} from "swagger-express-ts";
-import { arrayDates, getDates } from './date.service';
+import { getDates } from './date.service';
 
 export class SearchService {
 
